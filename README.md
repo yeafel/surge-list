@@ -1,5 +1,5 @@
 # surge rule-set sample
-
+```
 [Rule]
 RULE-SET,apple.list,Proxy
 RULE-SET,https://github.com/scomper/surge-list/raw/master/reject.list,REJECT
