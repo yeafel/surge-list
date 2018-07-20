@@ -1,5 +1,6 @@
 # Taiwan
 DOMAIN-SUFFIX,tw
+# Against DNS pollution
 DOMAIN-KEYWORD,google
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-KEYWORD,gmail
