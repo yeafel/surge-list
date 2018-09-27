@@ -1,5 +1,5 @@
 # surge rule-set sample
-# 完整的配置范例见 https://github.com/scomper/Surge/blob/master/surge3.conf
+### 完整的配置范例见 https://github.com/scomper/Surge/blob/master/surge3.conf
 ```
 [Rule]
 PROCESS-NAME,storedownloadd,DIRECT // Mac App Store
