@@ -24,6 +24,10 @@ DOMAIN-KEYWORD,usage
 DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,zjtoolbar
 DOMAIN-SUFFIX,club
+# Beijing Mobile Float
+IP-CIDR,221.179.140.145/32,no-resolve
+IP-CIDR,221.179.131.72/32,no-resolve
+IP-CIDR,114.247.28.96/32,no-resolve
 # Ads in Video apps
 DOMAIN-SUFFIX,ad.api.3g.tudou.com
 DOMAIN-SUFFIX,ad.api.3g.youku.com
