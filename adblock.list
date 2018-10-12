@@ -167,8 +167,10 @@ DOMAIN-SUFFIX,api.userstyles.org
 DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,appads.com
 DOMAIN-SUFFIX,appboy.com
+DOMAIN-SUFFIX,appliedsemantics.com
 DOMAIN-SUFFIX,applifier.com
 DOMAIN-SUFFIX,applovin.com
+DOMAIN-SUFFIX,apps5.oingo.com
 DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,atdmt.com
 DOMAIN-SUFFIX,audience.network
@@ -385,6 +387,7 @@ DOMAIN-SUFFIX,s.flipchina.cn
 DOMAIN-SUFFIX,sanya1.com
 DOMAIN-SUFFIX,scorecardresearch.com
 DOMAIN-SUFFIX,secure.dsp.com
+DOMAIN-SUFFIX,service.urchin.com
 DOMAIN-SUFFIX,serving-sys.com
 DOMAIN-SUFFIX,shentus.com
 DOMAIN-SUFFIX,shibeiou.com
