@@ -458,6 +458,8 @@ DOMAIN-SUFFIX,ups.ksmobile.net
 DOMAIN-SUFFIX,ws.ksmobile.net
 DOMAIN-SUFFIX,wtradv.market.xiaomi.com
 DOMAIN-SUFFIX,xmpush.xiaomi.com
+# vimeo
+DOMAIN-SUFFIX,localytics.com
 # youku
 DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com
 DOMAIN-SUFFIX,actives.youku.com
