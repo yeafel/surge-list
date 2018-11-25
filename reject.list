@@ -188,7 +188,6 @@ DOMAIN-SUFFIX,afp.iqiyi.com
 DOMAIN-SUFFIX,c.uaa.iqiyi.com
 DOMAIN-SUFFIX,cloudpush.iqiyi.com
 DOMAIN-SUFFIX,cm.passport.iqiyi.com
-DOMAIN-SUFFIX,cupid.iqiyi.com
 DOMAIN-SUFFIX,emoticon.sns.iqiyi.com
 DOMAIN-SUFFIX,gamecenter.iqiyi.com
 DOMAIN-SUFFIX,hotchat-im.iqiyi.com
@@ -299,7 +298,6 @@ DOMAIN-SUFFIX,r.dmp.sina.cn
 DOMAIN-SUFFIX,rm.sina.com.cn
 DOMAIN-SUFFIX,rs.sinajs.cn
 DOMAIN-SUFFIX,s.alitui.weibo.com
-DOMAIN-SUFFIX,s.img.mix.sina.com.cn
 DOMAIN-SUFFIX,sapi.sina.cn
 DOMAIN-SUFFIX,sax.sina.cn
 DOMAIN-SUFFIX,sax.sina.com.cn
@@ -338,7 +336,6 @@ DOMAIN-SUFFIX,btrace.qq.com
 DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN-SUFFIX,e.qq.com
 DOMAIN-SUFFIX,fusion.qq.com
-DOMAIN-SUFFIX,gdt.qq.com
 DOMAIN-SUFFIX,iacc.qq.com
 DOMAIN-SUFFIX,lives.l.qq.com
 DOMAIN-SUFFIX,livep.l.qq.com
@@ -391,7 +388,6 @@ DOMAIN-SUFFIX,oadz.com
 DOMAIN-SUFFIX,oimagea2.ydstatic.com
 DOMAIN-SUFFIX,pagechoice.net
 DOMAIN-SUFFIX,prom.gome.com.cn
-DOMAIN-SUFFIX,rlogs.youdao.com
 DOMAIN-SUFFIX,static.flv.uuzuonline.com
 DOMAIN-SUFFIX,wanproxy.127.net
 # xiaomi
