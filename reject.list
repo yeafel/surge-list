@@ -181,6 +181,7 @@ DOMAIN-SUFFIX,zz.bdstatic.com
 DOMAIN-SUFFIX,zzy1.quyaoya.com
 URL-REGEX,^https?://api\d\.tuisong\.baidu\.com
 URL-REGEX,^https?://sa\d\.tuisong\.baidu\.com
+URL-REGEX,^https?://update\.pan\.baidu\.com/statistics\?
 # iqiyi
 DOMAIN-SUFFIX,a.ckm.iqiyi.com
 DOMAIN-SUFFIX,ad.m.iqiyi.com
