@@ -501,6 +501,9 @@ DOMAIN-SUFFIX,val.api.youku.com
 DOMAIN-SUFFIX,wan.youku.com
 DOMAIN-SUFFIX,ykatr.youku.com
 DOMAIN-SUFFIX,ykrec.youku.com
+# BmaciOSapp
+DOMAIN,ad.bmac.com.cn
+# IP-CIDR
 IP-CIDR,117.177.248.17/32,no-resolve
 IP-CIDR,117.177.248.41/32,no-resolve
 IP-CIDR,223.87.176.139/32,no-resolve
