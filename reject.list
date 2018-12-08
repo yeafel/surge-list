@@ -3352,6 +3352,8 @@ DOMAIN-SUFFIX,zz.bdstatic.com
 DOMAIN-SUFFIX,zz2.hslyqs.com
 DOMAIN-SUFFIX,zzimg.51.la
 DOMAIN-SUFFIX,zzy1.quyaoya.com
+DOMAIN-SUFFIX,tracklog.58.com
+URL-REGEX,^https?://app\.58\.com/api/log
 # Baidu
 DOMAIN-SUFFIX,api.youqian.baidu.com
 DOMAIN-SUFFIX,as.baidu.com
