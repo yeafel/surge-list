@@ -279,6 +279,9 @@ DOMAIN-SUFFIX,yun.tuia.cn
 DOMAIN-SUFFIX,yunpifu.cn
 DOMAIN-SUFFIX,z.sora.yoyi.com.cn
 DOMAIN-SUFFIX,zhwnlapi.etouch.cn
+DOMAIN-SUFFIX,uczzd.cn
+DOMAIN-SUFFIX,testin.cn
+DOMAIN-SUFFIX,fraudmetrix.cn
 # 360.cn
 DOMAIN-SUFFIX,act.commercial.shouji.360.cn
 DOMAIN-SUFFIX,ad.dev.360.cn
@@ -657,6 +660,7 @@ DOMAIN-SUFFIX,tw.alimama.cn
 DOMAIN-SUFFIX,acjs.aliyun.com
 DOMAIN-SUFFIX,acookie.alimama.com
 DOMAIN-SUFFIX,adash.man.aliyuncs.com
+DOMAIN-SUFFIX,arms-retcode.aliyuncs.com
 DOMAIN-SUFFIX,aecpm.alicdn.com
 DOMAIN-SUFFIX,afp.alicdn.com
 DOMAIN-SUFFIX,afpeng.alimama.com
