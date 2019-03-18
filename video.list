@@ -19,6 +19,8 @@ USER-AGENT,com.google.ios.youtube*
 # Prime Video
 USER-AGENT,Prime%20Video*
 USER-AGENT,InstantVideo.US*
+USER-AGENT,ViuTV*
+DOMAIN,api.viu.now.com
 DOMAIN-SUFFIX,aiv-cdn.net
 DOMAIN-SUFFIX,amazonvideo.com
 DOMAIN-SUFFIX,llnwd.net
