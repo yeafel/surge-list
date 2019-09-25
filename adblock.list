@@ -1,4 +1,6 @@
 # AD Block KEYWORD
+DOMAIN-SUFFIX,bayescom.com
+DOMAIN-SUFFIX,eleven.bayescom.cn
 DOMAIN-KEYWORD,admarvel
 DOMAIN-KEYWORD,admaster
 DOMAIN-KEYWORD,adsage
