@@ -1,0 +1,32 @@
+#!name=Self
+#!desc=app removes ads.
+#!system=ios
+
+[Rule]
+IP-CIDR,139.224.5.157/32,REJECT
+DOMAIN,emdcmiddleware.securities.eastmoney.com,REJECT
+DOMAIN-SUFFIX,adashbc.ut.taobao.com,REJECT
+DOMAIN,mobappconfig.securities.eastmoney.com,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/base\/prevhomeshop,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/popupmenus\/awakehint,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/gatekeeper\/batchmodulecontrol,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/app\/start,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/alliance\/v1\/home\/showAlliance,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promo,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/market,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/base\/functionalBackground,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promotion\/coupon\/checkIsHaveFreeCoupon,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/core\/v1\/product\/guesslike,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promotion,REJECT
+URL-REGEX,^https:\/\/api\.m\.jd\.com\/api\?functionId=apollo_style_stylesQueryList$,REJECT
+DOMAIN,testflight.apple.com,Auto
+
+[URL Rewrite]
+^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ - reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint - reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report - reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video - reject
+^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) - reject
+
+[MITM]
+hostname = emdcmiddleware.securities.eastmoney.com:443, capi.luckincoffee.com, eastmoney.com, mp.weixin.qq.com, api.zhihu.com
