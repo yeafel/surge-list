@@ -1,57 +1,22 @@
 #!name=Self
-#!desc=app removes ads.
+#!desc=个人使用规则集.
 #!system=ios
 
 [Rule]
-# AD Block KEYWORD
-DOMAIN-SUFFIX,bduserlog.eastmoney.com,REJECT
-DOMAIN-SUFFIX,js4.eastmoney.com,REJECT
-DOMAIN-SUFFIX,same.eastmoney.com,REJECT
-DOMAIN-SUFFIX,bd-fireworks.eastmoney.com,REJECT
-DOMAIN,ad.12306.cn,REJECT
-DOMAIN-KEYWORD,bayescom,REJECT
-DOMAIN-KEYWORD,admarvel,REJECT
-DOMAIN-KEYWORD,admaster,REJECT
-DOMAIN-KEYWORD,adsage,REJECT
-DOMAIN-KEYWORD,adsmogo,REJECT
-DOMAIN-KEYWORD,adsrvmedia,REJECT
-DOMAIN-KEYWORD,adwords,REJECT
-DOMAIN-KEYWORD,adservice,REJECT
-DOMAIN-KEYWORD,crashlytics,REJECT
-DOMAIN-KEYWORD,domob,REJECT
-DOMAIN-KEYWORD,duomeng,REJECT
-DOMAIN-KEYWORD,dwtrack,REJECT
-DOMAIN-KEYWORD,guanggao,REJECT
-DOMAIN-KEYWORD,lianmeng,REJECT
-DOMAIN-KEYWORD,dnserror,REJECT
-DOMAIN-KEYWORD,omgmta,REJECT
-DOMAIN-KEYWORD,openx,REJECT
-DOMAIN-KEYWORD,partnerad,REJECT
-DOMAIN-KEYWORD,pingfore,REJECT
-DOMAIN-KEYWORD,supersonicads,REJECT
-DOMAIN-KEYWORD,tracking,REJECT
-DOMAIN-KEYWORD,uedas,REJECT
-DOMAIN-KEYWORD,umeng,REJECT
-DOMAIN-KEYWORD,usage,REJECT
-DOMAIN-KEYWORD,wlmonitor,REJECT
-DOMAIN-KEYWORD,zjtoolbar,REJECT
-IP-CIDR,139.224.5.157/32,REJECT
-DOMAIN,emdcmiddleware.securities.eastmoney.com,REJECT
-DOMAIN-SUFFIX,adashbc.ut.taobao.com,REJECT
-DOMAIN,mobappconfig.securities.eastmoney.com,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/base\/prevhomeshop,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/popupmenus\/awakehint,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/gatekeeper\/batchmodulecontrol,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/app\/start,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/alliance\/v1\/home\/showAlliance,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promo,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/market,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/base\/functionalBackground,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promotion\/coupon\/checkIsHaveFreeCoupon,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/core\/v1\/product\/guesslike,REJECT
-URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promotion,REJECT
-URL-REGEX,^https:\/\/api\.m\.jd\.com\/api\?functionId=apollo_style_stylesQueryList$,REJECT
-DOMAIN,testflight.apple.com,Auto
+RULE-SET,SYSTEM,DIRECT
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list,AdBlock,update-interval=86400
+RULE-SET,https://raw.githubusercontent.com/yeafel/surge-list/master/adblock.list,AdBlock,update-interval=86400
+RULE-SET,https://raw.githubusercontent.com/yeafel/surge-list/master/Domestic.list,DIRECT,update-interval=86400
+RULE-SET,https://raw.githubusercontent.com/yeafel/surge-list/master/Proxy.list,Proxy,update-interval=86400
+RULE-SET,LAN,DIRECT
+GEOIP,CN,DIRECT,no-resolve
+FINAL,Auto,dns-failed
+
+[Script]
+http-response https://api.zhihu.com/moments/recommend requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
+http-response https://api.zhihu.com/topstory/recommend requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
+http-response https://api.zhihu.com/v4/questions requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js
+http-response https://api.zhihu.com/people/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js
 
 [URL Rewrite]
 ^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ - reject
@@ -61,4 +26,4 @@ DOMAIN,testflight.apple.com,Auto
 ^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) - reject
 
 [MITM]
-hostname = emdcmiddleware.securities.eastmoney.com:443, capi.luckincoffee.com, eastmoney.com, mp.weixin.qq.com, api.zhihu.com
+hostname = emdcmiddleware.securities.eastmoney.com:443, capi.luckincoffee.com, eastmoney.com, mp.weixin.qq.com, api.zhihu.com,www.zhihu.com
