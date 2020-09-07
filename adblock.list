@@ -1,4 +1,8 @@
 # AD Block KEYWORD
+IP-CIDR,139.224.5.157/32,REJECT
+DOMAIN,emdcmiddleware.securities.eastmoney.com,REJECT
+DOMAIN-SUFFIX,adashbc.ut.taobao.com,REJECT
+DOMAIN,mobappconfig.securities.eastmoney.com,REJECT
 DOMAIN-SUFFIX,bduserlog.eastmoney.com
 DOMAIN-SUFFIX,js4.eastmoney.com
 DOMAIN-SUFFIX,same.eastmoney.com
@@ -30,3 +34,18 @@ DOMAIN-KEYWORD,umeng
 DOMAIN-KEYWORD,usage
 DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,zjtoolbar
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/base\/prevhomeshop,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/popupmenus\/awakehint,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/gatekeeper\/batchmodulecontrol,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/app\/start,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/alliance\/v1\/home\/showAlliance,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promo,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/market,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/base\/functionalBackground,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promotion\/coupon\/checkIsHaveFreeCoupon,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/core\/v1\/product\/guesslike,REJECT
+URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promotion,REJECT
+URL-REGEX,^https:\/\/api\.m\.jd\.com\/api\?functionId=apollo_style_stylesQueryList$,REJECT
+USER-AGENT,AVOS*,REJECT-TINYGIF
+URL-REGEX,https?://www.zhihu.com/api/v4/mcn/,REJECT
+URL-REGEX,https?://api.zhihu.com/(ab|adx|xen|club|fringe|zst|commercial|ad-style-service|market/popover|search/(top|tab|preset)|.*(guide|recommendations|extended|featured-comment-ad)),REJECT
