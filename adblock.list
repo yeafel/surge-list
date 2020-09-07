@@ -50,4 +50,5 @@ URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJ
 URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
 USER-AGENT,AVOS*,REJECT-TINYGIF
 URL-REGEX,https?://www.zhihu.com/api/v4/mcn/,REJECT
+URL-REGEX,^https:\/\/www\.zhihu\.com\/appview\/static\,REJECT
 URL-REGEX,https?://api.zhihu.com/(ab|adx|xen|club|fringe|zst|commercial|ad-style-service|market/popover|search/(top|tab|preset)|.*(guide|recommendations|extended|featured-comment-ad)),REJECT
