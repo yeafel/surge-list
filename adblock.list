@@ -46,6 +46,8 @@ URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promotion\/coupon\/ch
 URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/core\/v1\/product\/guesslike,REJECT
 URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/promotion,REJECT
 URL-REGEX,^https:\/\/api\.m\.jd\.com\/api\?functionId=apollo_style_stylesQueryList$,REJECT
+URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
+URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
 USER-AGENT,AVOS*,REJECT-TINYGIF
 URL-REGEX,https?://www.zhihu.com/api/v4/mcn/,REJECT
 URL-REGEX,https?://api.zhihu.com/(ab|adx|xen|club|fringe|zst|commercial|ad-style-service|market/popover|search/(top|tab|preset)|.*(guide|recommendations|extended|featured-comment-ad)),REJECT
