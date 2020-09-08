@@ -1,8 +1,10 @@
 # AD Block KEYWORD
 IP-CIDR,139.224.5.157/32,REJECT
-DOMAIN,emdcmiddleware.securities.eastmoney.com,REJECT
-DOMAIN-SUFFIX,adashbc.ut.taobao.com,REJECT
-DOMAIN,mobappconfig.securities.eastmoney.com,REJECT
+DOMAIN,emdcmiddleware.securities.eastmoney.com
+DOMAIN-SUFFIX,adashbc.ut.taobao.com
+DOMAIN,mobappconfig.securities.eastmoney.com
+DOMAIN-SUFFIX,api.zhihu.com/commercial_api/launch_v2
+DOMAIN-SUFFIX,zhihu.com/appview/static
 DOMAIN-SUFFIX,bduserlog.eastmoney.com
 DOMAIN-SUFFIX,js4.eastmoney.com
 DOMAIN-SUFFIX,same.eastmoney.com
