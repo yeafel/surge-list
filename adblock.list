@@ -1,5 +1,5 @@
 # AD Block KEYWORD
-IP-CIDR,139.224.5.157/32,REJECT
+IP-CIDR,139.224.5.157/32
 DOMAIN,emdcmiddleware.securities.eastmoney.com
 DOMAIN-SUFFIX,adashbc.ut.taobao.com
 DOMAIN,mobappconfig.securities.eastmoney.com
@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,js4.eastmoney.com
 DOMAIN-SUFFIX,same.eastmoney.com
 DOMAIN-SUFFIX,bd-fireworks.eastmoney.com
 DOMAIN,ad.12306.cn
+DOMAIN-SUFFIX,ads.trafficjunky.net
 DOMAIN-KEYWORD,launch_v2
 DOMAIN-KEYWORD,appview
 DOMAIN-KEYWORD,bayescom
