@@ -1,5 +1,5 @@
 #Apple
-DOMAIN,testflight.apple.com
+DOMAIN-SUFFIX,testflight.apple.com
 # > Line
 DOMAIN-SUFFIX,lin.ee
 DOMAIN-SUFFIX,line.me
@@ -330,6 +330,8 @@ DOMAIN-SUFFIX,overcast.fm
 DOMAIN-SUFFIX,ow.ly
 DOMAIN-SUFFIX,paddle.com
 DOMAIN-SUFFIX,paddleapi.com
+DOMAIN-SUFFIX,phncdn.com
+DOMAIN-KEYWORD,pornhub
 DOMAIN-SUFFIX,panoramio.com
 DOMAIN-SUFFIX,parallels.com
 DOMAIN-SUFFIX,parse.com
