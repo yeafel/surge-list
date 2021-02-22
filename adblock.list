@@ -37,6 +37,8 @@ DOMAIN-KEYWORD,umeng
 DOMAIN-KEYWORD,usage
 DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,zjtoolbar
+DOMAIN-KEYWORD,doubleclick
+xURL-REGEX,^https:\/\/api\.weibo\.cn\/2\/push\/active\?,REJECT
 URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/base\/prevhomeshop,REJECT
 URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/sys\/popupmenus\/awakehint,REJECT
 URL-REGEX,^https:\/\/capi\.luckincoffee\.com\/resource\/m\/gatekeeper\/batchmodulecontrol,REJECT
