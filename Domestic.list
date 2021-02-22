@@ -5,9 +5,10 @@ DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,icloud-content.com
-DOMAIN-SUFFIX,icloud.com
+DOMAIN-KEYWORD,icloud
 DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,mail.me.com
 DOMAIN-SUFFIX,mzstatic.com
 
 # > Beplay
