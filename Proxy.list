@@ -19,6 +19,11 @@ DOMAIN-SUFFIX,smartmailcloud.com
 USER-AGENT,battleroyale*
 
 # > Top blocked sites
+DOMAIN-SUFFIX,openweathermap.org
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-KEYWORD,clubhouse
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,clubhouseapi.com
 DOMAIN-SUFFIX,2o7.net
 DOMAIN-SUFFIX,4everProxy.com
 DOMAIN-SUFFIX,4shared.com
