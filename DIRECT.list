@@ -1,5 +1,7 @@
 
-#Apple
+# Domestic
+
+DOMAIN-SUFFIX,aliyundrive.com
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.com
@@ -10,26 +12,17 @@ DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,mail.me.com
 DOMAIN-SUFFIX,mzstatic.com
-
-# > Beplay
 DOMAIN-KEYWORD,beplay
-
-# > Blizzard
 DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,battlenet.com
 DOMAIN-SUFFIX,blizzard.com
-
-# > Prior
 DOMAIN,client.amplifi.com
 DOMAIN,ip.bjango.com
 DOMAIN-SUFFIX,alphassl.com
 DOMAIN-SUFFIX,edu.cn
-
-# China Apps
 USER-AGENT,MApi*
 USER-AGENT,MicroMessenger*
 USER-AGENT,WeChat*
-# Ali
 DOMAIN-KEYWORD,alipay
 DOMAIN-KEYWORD,taobao
 DOMAIN-KEYWORD,alicdn
@@ -39,15 +32,12 @@ DOMAIN-SUFFIX,mi.com
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,tmall.com
 DOMAIN-SUFFIX,youku.com
-# Misc
 DOMAIN-SUFFIX,bootcss.com
 DOMAIN-SUFFIX,biquge.com.tw
 DOMAIN-SUFFIX,ip.bjango.com
-DOMAIN-SUFFIX,ip.sb
 DOMAIN-SUFFIX,loli.net
 DOMAIN-SUFFIX,maoyun.tv
 DOMAIN-SUFFIX,moke.com
-DOMAIN-SUFFIX,sb.sb
 DOMAIN-SUFFIX,servicewechat.com
 DOMAIN-SUFFIX,sm.ms
 DOMAIN-SUFFIX,u.nu
@@ -56,19 +46,7 @@ DOMAIN-SUFFIX,zimuzu.tv
 DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zmzapi.net
 DOMAIN-SUFFIX,zmzfile.com
-
-# > TeamViewer
-IP-CIDR,185.188.32.0/24,no-resolve
-IP-CIDR,185.188.33.0/24,no-resolve
-IP-CIDR,185.188.34.0/24,no-resolve
-IP-CIDR,185.188.35.0/24,no-resolve
-IP-CIDR6,2a0b:b580::/48,no-resolve
-IP-CIDR6,2a0b:b581::/48,no-resolve
-IP-CIDR6,2a0b:b582::/48,no-resolve
-IP-CIDR6,2a0b:b583::/48,no-resolve
-
-# Domestic
-DOMAIN-SUFFIX,futu5.com,DIRECT
+DOMAIN-SUFFIX,futu5.com
 DOMAIN-SUFFIX,12306.cn
 DOMAIN-SUFFIX,12306.com
 DOMAIN-SUFFIX,126.net
@@ -89,8 +67,6 @@ DOMAIN-SUFFIX,air-matters.io
 DOMAIN-SUFFIX,aixifan.com
 DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,alibabacloud.com
-DOMAIN-SUFFIX,alicdn.com
-DOMAIN-SUFFIX,alipay.com
 DOMAIN-SUFFIX,alipayobjects.com
 DOMAIN-SUFFIX,amap.com
 DOMAIN-SUFFIX,apache.org
@@ -315,5 +291,12 @@ DOMAIN-SUFFIX,zgslb.net
 DOMAIN-SUFFIX,zhimg.com
 DOMAIN-SUFFIX,zimuzu.tv
 DOMAIN-SUFFIX,zmz002.com
-
+IP-CIDR,185.188.32.0/24,no-resolve
+IP-CIDR,185.188.33.0/24,no-resolve
+IP-CIDR,185.188.34.0/24,no-resolve
+IP-CIDR,185.188.35.0/24,no-resolve
+IP-CIDR6,2a0b:b580::/48,no-resolve
+IP-CIDR6,2a0b:b581::/48,no-resolve
+IP-CIDR6,2a0b:b582::/48,no-resolve
+IP-CIDR6,2a0b:b583::/48,no-resolve
 IP-CIDR,1.255.62.0/24,no-resolve
