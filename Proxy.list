@@ -18,7 +18,9 @@ DOMAIN-SUFFIX,smartmailcloud.com
 # > Zooba
 USER-AGENT,battleroyale*
 
-# > Top blocked sites
+# > 自定义
+DOMAIN,t.me
+DOMAIN-SUFFIX,buff.ly
 DOMAIN-SUFFIX,openweathermap.org
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-KEYWORD,clubhouse
