@@ -19,6 +19,9 @@ DOMAIN-SUFFIX,smartmailcloud.com
 USER-AGENT,battleroyale*
 
 # > 自定义
+DOMAIN-SUFFIX,bbc.in
+DOMAIN-SUFFIX,juzicloud.net
+IP-CIDR,5.28.194.0/22
 DOMAIN,t.me
 DOMAIN-SUFFIX,buff.ly
 DOMAIN-SUFFIX,openweathermap.org
