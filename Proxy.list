@@ -20,6 +20,9 @@ USER-AGENT,battleroyale*
 
 # > 自定义
 DOMAIN-SUFFIX,bbc.in
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,nytcn.me
+DOMAIN-SUFFIX,bbci.co.uk
 DOMAIN-SUFFIX,juzicloud.net
 IP-CIDR,5.28.194.0/22
 DOMAIN,t.me
