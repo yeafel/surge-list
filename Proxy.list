@@ -19,6 +19,8 @@ DOMAIN-SUFFIX,smartmailcloud.com
 USER-AGENT,battleroyale*
 
 # > 自定义
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-KEYWORD,juzi
 DOMAIN-SUFFIX,bbc.in
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,nytcn.me
