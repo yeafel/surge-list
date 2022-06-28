@@ -1,5 +1,7 @@
 # AD Block KEYWORD
 IP-CIDR,139.224.5.157/32
+DOMAIN-SUFFIX,https://www.xiaohongshu.com/api/sns/v1/ads/apple/record
+DOMAIN,ads-img-al.xhscdn.com
 DOMAIN,analytics.umetrip.com
 DOMAIN-SUFFIX,adashbc.ut.taobao.com
 DOMAIN-SUFFIX,bduserlog.eastmoney.com
