@@ -39,3 +39,36 @@ DOMAIN-KEYWORD,usage
 DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,zjtoolbar
 DOMAIN-KEYWORD,doubleclick
+# >> Futu Securities
+URL-REGEX,^https?:\/\/api5\.futunn\.com\/ad\/,REJECT
+# >> JD
+URL-REGEX,^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/,REJECT
+URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT
+URL-REGEX,^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo,REJECT
+# >> Keep
+URL-REGEX,^https?:\/\/static1\.keepcdn\.com\/.+\d{3}x\d{4},REJECT
+URL-REGEX,^https?:\/\/api\.gotokeep\.com\/ads\/,REJECT
+# >> WeiXin
+URL-REGEX,^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/,REJECT
+URL-REGEX,^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint,REJECT
+URL-REGEX,^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report,REJECT
+URL-REGEX,^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video,REJECT
+URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport),REJECT
+# >> Bilibili
+URL-REGEX,^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/,REJECT
+# >> Beike Zhaofang
+URL-REGEX,^https?:\/\/app\.api\.ke\.com\/config\/config\/bootpage,REJECT
+# >> Baidu
+URL-REGEX,^https?:\/\/.+\/client\/phpui2\/,REJECT
+URL-REGEX,^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/,REJECT
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule,REJECT
+URL-REGEX,^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/,REJECT
+URL-REGEX,^https?:\/\/update\.pan\.baidu\.com\/statistics,REJECT
+# >> ByteDance
+URL-REGEX,^https?:\/\/.+\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/,REJECT
+URL-REGEX,^https?:\/\/.+\.pstatp\.com\/img\/ad,REJECT
+URL-REGEX,^https?:\/\/.+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/v\d\/,REJECT
+URL-REGEX,^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/,REJECT
+# >> ChinaUnicom
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm,REJECT
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getWelcomeAd|getHomePageAd),REJECT
