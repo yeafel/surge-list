@@ -1,3 +1,6 @@
+# 自定义
+DOMAIN-KEYWORD,juzi
+DOMAIN-SUFFIX,bitwarden.com
 #Apple
 DOMAIN-SUFFIX,testflight.apple.com
 # > Line
