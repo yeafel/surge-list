@@ -1,4 +1,5 @@
 # AD Block KEYWORD
+DOMAIN,adashx.ut.amap.com
 IP-CIDR,139.224.5.157/32
 DOMAIN,adsmind.gdtimg.com
 DOMAIN-SUFFIX,https://www.xiaohongshu.com/api/sns/v1/ads/apple/record
@@ -39,6 +40,10 @@ DOMAIN-KEYWORD,usage
 DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,zjtoolbar
 DOMAIN-KEYWORD,doubleclick
+#>> wuling
+URL-REGEX,^https:\/\/api\.00bang\.cn\/llb\/baseinfo\/advertise\/getAdvertiseByPageCode,REJECT
+URL-REGEX,^https:\/\/api\.00bang\.cn\/third\/query\/user\/window$,REJECT
+URL-REGEX,^https:\/\/event\.00bang\.cn\/event\/advertise\/saveAdvertiseStatistics$,REJECT
 # >> Futu Securities
 URL-REGEX,^https?:\/\/api5\.futunn\.com\/ad\/,REJECT
 # >> JD
