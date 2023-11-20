@@ -1,5 +1,6 @@
 # 自定义
 DOMAIN-SUFFIX, cn.nikkei.com
+DOMAIN-KEYWORD,juzicloud
 DOMAIN-KEYWORD, Bing
 DOMAIN-KEYWORD, openai
 DOMAIN-SUFFIX, guoyu.mirror.xyz
@@ -17,7 +18,6 @@ DOMAIN-SUFFIX,bbc.in
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,nytcn.me
 DOMAIN-SUFFIX,bbci.co.uk
-DOMAIN-SUFFIX,juzicloud.net
 IP-CIDR,5.28.194.0/22
 DOMAIN,t.me
 DOMAIN-SUFFIX,buff.ly
