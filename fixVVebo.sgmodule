@@ -1,18 +1,10 @@
 #!name=VVebo-Fix
 #!desc=VVebo修复失效的用户页面和粉丝列表
 #!category = 工具
-#!author=@suiyuran
 
 [Script]
-
-# > 修复用户主页时间线
-VVebo = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\?, requires-body=1,script-path=https://raw.githubusercontent.com/yeafel/surge-list/master/fix_vvebo_user_profile.js
-VVebo = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\?, requires-body=1,script-path=https://raw.githubusercontent.com/yeafel/surge-list/master/fix_vvebo_user_profile.js
-VVebo = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\?,requires-body=1, script-path=https://raw.githubusercontent.com/yeafel/surge-list/master/fix_vvebo_user_profile.js
-VVebo = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/users\/show\?,requires-body=1, script-path=https://raw.githubusercontent.com/yeafel/surge-list/master/fix_vvebo_user_profile.js
-# > 修复粉丝列表
-VVebo = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/cardlist\?,requires-body=1, script-path=https://raw.githubusercontent.com/yeafel/surge-list/master/fix_vvebo_fans.js, requires-body=true
-
+fix-vvebo-user-timeline = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/users\/show\?, requires-body=0, timeout=5, script-path=https://raw.githubusercontent.com/suiyuran/stash/main/scripts/fix-vvebo-user-timeline.js
+fix-vvebo-user-timeline2 = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\?, requires-body=0, timeout=5, script-path=https://raw.githubusercontent.com/suiyuran/stash/main/scripts/fix-vvebo-user-timeline.js
+fix-vvebo-user-timeline3 = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\?, requires-body=1, timeout=5, script-path=https://raw.githubusercontent.com/suiyuran/stash/main/scripts/fix-vvebo-user-timeline.js
 [MITM]
-
-hostname = %INSERT% api.weibo.cn
+hostname = %APPEND% api.weibo.cn
