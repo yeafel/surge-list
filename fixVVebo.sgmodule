@@ -1,6 +1,6 @@
-#!name=VVebo-fix
+#!name=VVebo-Fix
 #!desc=VVebo修复失效的用户页面和粉丝列表
-#!category = 工具类
+#!category = 工具
 #!author=@suiyuran
 
 [Script]
