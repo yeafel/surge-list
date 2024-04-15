@@ -1,112 +1,48 @@
-#!name=Self
-#!desc=个人使用规则集.
+#!name=Surge-rule
+#!desc=yeafel 个人使用规则集.
 #!system=ios
 
 [Rule]
-RULE-SET,SYSTEM,DIRECT
+#自定义规则
 RULE-SET,https://raw.githubusercontent.com/yeafel/surge-list/master/DIRECT.list,DIRECT,update-interval=86400
-RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list,AdBlock,update-interval=86400
-RULE-SET,https://raw.githubusercontent.com/yeafel/surge-list/master/adblock.list,AdBlock,update-interval=86400
+RULE-SET,https://raw.githubusercontent.com/yeafel/surge-list/master/adblock.list,REJECT,update-interval=86400
 RULE-SET,https://raw.githubusercontent.com/yeafel/surge-list/master/Proxy.list,Proxy,update-interval=86400
+RULE-SET,https://raw.githubusercontent.com/yeafel/surge-list/master/tiktok.list,Japan,update-interval=86400
+RULE-SET,https://raw.githubusercontent.com/yeafel/surge-list/master/openAI.list,Japan,update-interval=86400
+#第三方规则
+RULE-SET,https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/ruleset/proxy.txt,Proxy,update-interval=86400
+
 RULE-SET,LAN,DIRECT
 GEOIP,CN,DIRECT,no-resolve
-FINAL,DIRECT,dns-failed
+RULE-SET,SYSTEM,DIRECT
+FINAL,Proxy,dns-failed
 
-[Script]
-http-response https://api.zhihu.com/moments/recommend requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
-http-response https://api.zhihu.com/topstory/recommend requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
-http-response https://api.zhihu.com/v4/questions requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js
-http-response https://api.zhihu.com/people/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js
-http-response ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
-http-response ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
-
-[URL Rewrite]
-# >> WeiXin
-^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ - reject
-^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint - reject
-^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report - reject
-^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video - reject
-^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) - reject
-# >> Bilibili
-^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ - reject
-# >> Beike Zhaofang
-^https?:\/\/app\.api\.ke\.com\/config\/config\/bootpage - reject
-# >> Baidu
-^https?:\/\/.+\/client\/phpui2\/ - reject
-^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/ - reject
-^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule - reject
-^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ - reject
-^https?:\/\/update\.pan\.baidu\.com\/statistics - reject
-# >> ByteDance
-^https?:\/\/.+\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ - reject
-^https?:\/\/.+\.pstatp\.com\/img\/ad - reject
-^https?:\/\/.+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/v\d\/ - reject
-^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ - reject
-# >> ChinaUnicom
-^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm - reject
-^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getWelcomeAd|getHomePageAd) - reject
-# >> Google
-^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat - reject
-^https?:\/\/.+\.youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/.+\.youtube\.com\/get_midroll - reject
-^https?:\/\/.+\.youtube\.com\/get_midroll_ - reject
-^https?:\/\/.+\.youtube\.com\/pagead\/ - reject
-^https?:\/\/.+\.youtube\.com\/ptracking - reject
-^https?:\/\/.+\.youtube\.com\/ptracking\? - reject
-^https?:\/\/pagead2.googlesyndication.com\/pagead\/js\/? - reject
-^https?:\/\/pagead2.googlesyndication.com\/pagead\/js\/? - reject
-^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite - reject
-^https?:\/\/www.google-analytics.com\/analytics.js - reject
-^https?:\/\/www.google-analytics.com\/analytics.js - reject
-^https?:\/\/youtubei\.googleapis\.com/.+ad_break - reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ - reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ - reject
-# >> iQiyi
-^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do - reject
-^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show - reject
-^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
-^https?:\/\/t7z\.cupid\.iqiyi\.com\/mixer\? - reject
-# >> JD
-^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
-^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo - reject
-# >> Keep
-^https?:\/\/static1\.keepcdn\.com\/.+\d{3}x\d{4} - reject
-^https?:\/\/api\.gotokeep\.com\/ads\/ - reject
-# >> KFC
-^https?:\/\/res\.kfc\.com\.cn\/advertisement\/ - reject
-# >> Luckin Coffee
-^https?:\/\/.+\/resource\/m\/promo\/adsense - reject
-^https?:\/\/.+\/resource\/m\/sys\/app\/adpos - reject
-# >> Meituan
-^https?:\/\/img\.meituan\.net\/midas\/ - reject
-^https?:\/\/p([0-9])\.meituan\.net\/(mmc|wmbanner)\/ - reject
-^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|linglong|mmc|wmbanner)\/ - reject
-^https?:\/\/s3plus\.meituan\.net\/.+\/linglong\/ - reject
-# >> MI
-^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start - reject
-^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ - reject
-^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen - reject
-# >> MI Fit
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\? - reject
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\? - reject
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_ad\? - reject
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\? - reject
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? - reject
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? - reject
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? - reject
-# >> Sina Weibo
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php - reject
-^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua - reject
-^https?:\/\/sdkapp\.uve\.weibo\.com/\interface\/sdk\/actionad\.php - reject
-# >> Futu Securities
-^https?:\/\/api5\.futunn\.com\/ad\/ - reject
-# >> YYeTs
-^https?:\/\/ctrl\.(playcvn|zmzapi)\.(com|net)\/app\/(ads|init) - reject
-# >> Zhihu
-^https?:\/\/api\.zhihu\.com\/launch - reject
-^https?:\/\/api\.zhihu\.com\/real_time_launch - reject
-^https?:\/\/www\.zhihu\.com\/api\/v\d\/community-ad\/ - reject
+[Host]
+ip6-localhost = ::1
+ip6-loopback = ::1
+dns.alidns.com = server:223.5.5.5
+*.taobao.com = server:223.6.6.6
+*.tmall.com = server:223.6.6.6
+*.jd.com = server:119.28.28.28
+*.qq.com = server:119.28.28.28
+*.tencent.com = server:119.28.28.28
+*.alicdn.com = server:223.5.5.5
+*.aliyun.com = server:223.5.5.5
+*.weixin.com = server:119.28.28.28
+*.bilibili.com = server:119.29.29.29
+*.mi.com = server:119.29.29.29
+*.xiaomi.com = server:119.29.29.29
+routerlogin.net = server:syslib
+_hotspot_.m2m = server:syslib
+router.asus.com = server:syslib
+hotspot.cslwifi.com = server:syslib
+amplifi.lan = server:syslib
+*.lan = server:syslib
 
 [MITM]
-hostname = %APPEND% api.bilibili.com, app.bilibili.com,*.uve.weibo.com, api.weibo.cn, mapi.weibo.com, storage.wax.weibo.com,emdcmiddleware.securities.eastmoney.com:443, capi.luckincoffee.com, eastmoney.com, mp.weixin.qq.com, api.zhihu.com,www.zhihu.com,api5.futunn.com
+tcp-connection = true
+hostname = *.claritywallpaper.com, *.00bang.cn, mp.weixin.qq.com, *.wlmkids.com, *..wanlimuapp.com, *.qufenqi.com, crystalapp.miguvideo.com:443, api5.futunn.com, juzicloud.net, auth.aliyundrive.com
+hostname-disabled = *.wlmkids.com, *..wanlimuapp.com, *.qufenqi.com, crystalapp.miguvideo.com:443, api5.futunn.com
+
+[Script]
+去广告 = type=rule,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/pornhub.js,script-update-interval=0
