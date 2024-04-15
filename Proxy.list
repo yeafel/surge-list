@@ -1,4 +1,7 @@
 # 自定义
+DOMAIN-SUFFIX,vercel.app
+DOMAIN-SUFFIX,stream-link.org
+DOMAIN-SUFFIX,microsoft.com
 DOMAIN-KEYWORD,zaobao
 DOMAIN-KEYWORD,juzi
 DOMAIN-KEYWORD,juzicloud
