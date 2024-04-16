@@ -4,10 +4,10 @@
 
 [Script]
 #彩云天气
-彩云天气 = type=http-response, pattern=^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners|operation\/homefeatures|config)|p\/v\d\/(vip_info|user_info|entries|privileges|trial_card\/info)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, requires-body=true, max-size=-1, timeout=10
-彩云天气 = type=http-request, pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, timeout=10
+彩云天气 = type=http-response, pattern=^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners|operation\/homefeatures|config)|p\/v\d\/(vip_info|user_info|entries|privileges|trial_card\/info)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, requires-body=true, max-size=-1, timeout=60
+彩云天气 = type=http-request, pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, timeout=60
 #Filmix
-filmix = type=http-response, pattern=^https?:\/\/appv2\.filmix\.com\.cn\/api\/v\d\/users, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/filmix.js, requires-body=true, max-size=-1, timeout=10
+filmix = type=http-response, pattern=^https?:\/\/appv2\.filmix\.com\.cn\/api\/v\d\/users, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/filmix.js, requires-body=true, max-size=-1, timeout=60
 #LightRoom
 LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
 #APTV
