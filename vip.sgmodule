@@ -1,0 +1,24 @@
+#!name=VIP
+#!desc=解锁VIP
+#!category=解锁会员
+
+[Script]
+#彩云天气
+彩云天气 = type=http-response, pattern=^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners|operation\/homefeatures|config)|p\/v\d\/(vip_info|user_info|entries|privileges|trial_card\/info)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, requires-body=true, max-size=-1, timeout=10
+彩云天气 = type=http-request, pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, timeout=10
+#Filmix
+filmix = type=http-response, pattern=^https?:\/\/appv2\.filmix\.com\.cn\/api\/v\d\/users, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/filmix.js, requires-body=true, max-size=-1, timeout=10
+#LightRoom
+LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
+#APTV
+APTV=type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/APTV.js
+#美图秀秀
+美图秀秀=type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js
+#财新会员
+财新会员 = type=http-request,pattern=^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/CaiXin/Script/CaiXin.js,script-update-interval=0
+
+
+
+
+[MITM]
+hostname = %APPEND% *.cyapi.cn, *.caiyunapp.com, %APPEND% appv2.filmix.com.cn, %APPEND% photos.adobe.io, %APPEND% api.revenuecat.com, %APPEND% h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com, %APPEND% gateway.caixin.com
