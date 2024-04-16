@@ -21,4 +21,4 @@ APTV=type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscrib
 
 
 [MITM]
-hostname = %APPEND% *.cyapi.cn, *.caiyunapp.com, %APPEND% appv2.filmix.com.cn, %APPEND% photos.adobe.io, %APPEND% api.revenuecat.com, %APPEND% h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com, %APPEND% gateway.caixin.com
+hostname = *.cyapi.cn, *.caiyunapp.com, appv2.filmix.com.cn, photos.adobe.io, api.revenuecat.com, h5.xiuxiu.meitu.com,api.xiuxiu.meitu.com, gateway.caixin.com
