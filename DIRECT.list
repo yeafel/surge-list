@@ -1,4 +1,10 @@
 #自定义
+
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,163jiasu.com
+DOMAIN,api.miwifi.com
+DOMAIN,album.biliimg.com
+DOMAIN,xiamenair.com
 DOMAIN-SUFFIX,cnzz.com
 DOMAIN-SUFFIX,umiwi.com
 DOMAIN-SUFFIX,bj.bcebos.com

@@ -1,5 +1,7 @@
 # 自定义
 
+DOMAIN,handoutv.top
+DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,wogg.link
 DOMAIN-SUFFIX,wogg.xyz
 DOMAIN-SUFFIX,xxooo.cf
@@ -11,7 +13,7 @@ DOMAIN-KEYWORD,zaobao
 DOMAIN-KEYWORD,juzi
 DOMAIN-KEYWORD,juzicloud
 DOMAIN-KEYWORD,Bing
-DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,spotify
 DOMAIN-SUFFIX, guoyu.mirror.xyz
 DOMAIN-SUFFIX, mirror.xyz
 DOMAIN-SUFFIX, houxu.app

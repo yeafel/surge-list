@@ -1,4 +1,6 @@
 # AD Block KEYWORD
+
+DOMAIN-SUFFIX,ad.xiaomi.com
 DOMAIN,video.market.xiaomi.com
 DOMAIN,adashx.ut.amap.com
 IP-CIDR,139.224.5.157/32
