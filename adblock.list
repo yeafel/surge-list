@@ -1,5 +1,12 @@
 # AD Block KEYWORD
 
+DOMAIN-SUFFIX,ilisten.idaddy.cn
+DOMAIN-SUFFIX,ubixioe.com
+DOMAIN-SUFFIX,anythinktech.com
+DOMAIN-SUFFIX,sdk.beizi.biz
+DOMAIN-SUFFIX,adx.hubcloud.com.cn
+DOMAIN-KEYWORD,flashscreen
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
 DOMAIN-SUFFIX,ad.xiaomi.com
 DOMAIN,video.market.xiaomi.com
 DOMAIN,adashx.ut.amap.com
@@ -72,6 +79,8 @@ URL-REGEX,^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/,REJECT
 URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule,REJECT
 URL-REGEX,^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/,REJECT
 URL-REGEX,^https?:\/\/update\.pan\.baidu\.com\/statistics,REJECT
+URL-REGEX,^https:\/\/xiaodu\.baidu\.com\/xiaoduapp\/v1\/index\/index\/flashScreen$,REJECT
+
 # >> ByteDance
 URL-REGEX,^https?:\/\/.+\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/,REJECT
 URL-REGEX,^https?:\/\/.+\.pstatp\.com\/img\/ad,REJECT

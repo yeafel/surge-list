@@ -1,6 +1,8 @@
 # 自定义
 
-DOMAIN,handoutv.top
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN-SUFFIX,cherrystudio.ocool.online
+DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,wogg.link
 DOMAIN-SUFFIX,wogg.xyz
