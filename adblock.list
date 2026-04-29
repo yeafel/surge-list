@@ -1,5 +1,12 @@
 # AD Block KEYWORD
-
+DOMAIN,masterconn11.qq.com
+DOMAIN-SUFFIX,bduserlog.eastmoney.com
+DOMAIN-SUFFIX,js4.eastmoney.com
+DOMAIN-SUFFIX,same.eastmoney.com
+URL-REGEX,^https?:\/\/app\.ceair\.com\/customize\/main\/adScreen
+URL-REGEX,^https?:\/\/app\.ceair\.com\/customize\/security\/update
+URL-REGEX,^https?:\/\/emdcadvertise\.eastmoney\.com\/infoService\/v\d
+DOMAIN,roadshow.lvb.eastmoney.com
 DOMAIN-SUFFIX,ilisten.idaddy.cn
 DOMAIN-SUFFIX,ubixioe.com
 DOMAIN-SUFFIX,anythinktech.com
