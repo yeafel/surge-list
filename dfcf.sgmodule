@@ -1,0 +1,11 @@
+#!name=东方财富去广告
+#!desc=去除东方财富开屏广告、活动背景图、广告位接口。2026-06-12 整理。
+#!author=local
+#!system=ios
+
+[URL Rewrite]
+^https?:\/\/emdcadvertise(?:pj|-wap)?\.eastmoney\.com\/infoService(?:\/v2)? _ reject
+^https?:\/\/swdlcdn\.eastmoney\.com\/app\/adimg\/ _ reject
+
+[MITM]
+hostname = %APPEND% emdcadvertise.eastmoney.com, emdcadvertisepj.eastmoney.com, emdcadvertise-wap.eastmoney.com, swdlcdn.eastmoney.com
