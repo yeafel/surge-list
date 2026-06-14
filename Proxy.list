@@ -38,47 +38,13 @@ DOMAIN-KEYWORD,segment
 DOMAIN-KEYWORD,cmscc
 DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,twitter.com
-DOMAIN,standardebooks.org
 DOMAIN,open.longbridge.com
 DOMAIN-SUFFIX,immersivetranslate.co
-DOMAIN-SUFFIX,feedpress.com
 DOMAIN-SUFFIX,tedium.co
-DOMAIN-SUFFIX,moltbook.com
-DOMAIN-SUFFIX,confirmo.love
-DOMAIN-SUFFIX,craft.do
-DOMAIN,polymarket.com
-DOMAIN-KEYWORD,adobe
-DOMAIN-KEYWORD,yahoo
-DOMAIN-SUFFIX,gravatar.com
-DOMAIN,s.yimg.com
-DOMAIN-SUFFIX,syzagk.com
-DOMAIN-SUFFIX,pages.dev
-DOMAIN-KEYWORD,github
-DOMAIN,danwang.co
-DOMAIN,w1.xn--9kq015a4jm.com
-DOMAIN-SUFFIX,azure-api.net
-DOMAIN-SUFFIX,redd.it
-DOMAIN,www.recaptcha.net
-DOMAIN-KEYWORD,reddit
-DOMAIN-SUFFIX,dandanplay.net
-DOMAIN,aihot.today
-DOMAIN-SUFFIX,wenxuecity.com
-DOMAIN-SUFFIX,ioskuka.com
-DOMAIN,su.xfjhchr.com
-DOMAIN,nullbr.online
-DOMAIN-KEYWORD,oplist
-DOMAIN-SUFFIX,fastbull.com
-DOMAIN-SUFFIX,hdhive.com
-DOMAIN-SUFFIX,mooguu.org
-DOMAIN-KEYWORD,docker
-DOMAIN-KEYWORD,segment
-DOMAIN-KEYWORD,cmscc
 DOMAIN,vpn.28.al
 DOMAIN-KEYWORD,pearclub
 DOMAIN-SUFFIX,oceancloud.asia
 DOMAIN-SUFFIX,oceancloud.pro
-DOMAIN-SUFFIX,iturrit.com
-DOMAIN-SUFFIX,11yun.live
 
 # Emby 相关
 DOMAIN-KEYWORD,cat-eye
@@ -100,7 +66,6 @@ DOMAIN-SUFFIX,buff.ly
 DOMAIN-SUFFIX,makifx.com
 DOMAIN-SUFFIX,infuseku.xyz
 DOMAIN-SUFFIX,img360zy.com
-DOMAIN-SUFFIX,checkhere.top
 DOMAIN-SUFFIX,no-mad-world.club
 DOMAIN-SUFFIX,lyrebird.cloud
 DOMAIN,tkr21.no-mad-world.club
@@ -119,22 +84,17 @@ DOMAIN-SUFFIX,xxooo.cf
 DOMAIN-SUFFIX,gitcafe.net
 DOMAIN-SUFFIX,vercel.app
 DOMAIN-SUFFIX,stream-link.org
-DOMAIN-SUFFIX,microsoft.com
 DOMAIN-KEYWORD,zaobao
-DOMAIN-KEYWORD,Bing
+DOMAIN-KEYWORD,bing
 DOMAIN-KEYWORD,spotify
-DOMAIN-SUFFIX, guoyu.mirror.xyz
-DOMAIN-SUFFIX, mirror.xyz
-DOMAIN-SUFFIX, houxu.app
-DOMAIN-SUFFIX, ftchinese.com
+DOMAIN-SUFFIX,mirror.xyz
+DOMAIN-SUFFIX,houxu.app
+DOMAIN-SUFFIX,ftchinese.com
 DOMAIN-SUFFIX,bitwarden.com
-DOMAIN-SUFFIX,testflight.apple.com
 DOMAIN-SUFFIX,digicert.com
-DOMAIN-SUFFIX, cn.nikkei.com
+DOMAIN-SUFFIX,cn.nikkei.com
 DOMAIN-SUFFIX,bbc.in
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,nytcn.me
 DOMAIN-SUFFIX,bbci.co.uk
-DOMAIN-SUFFIX,buff.ly
 DOMAIN-SUFFIX,openweathermap.org
-
