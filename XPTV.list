@@ -107,8 +107,8 @@ DOMAIN-SUFFIX,doubanio.com
 #同步数据
 DOMAIN,gateway.icloud.com
 #杂七杂八的播放
-DOMAIN,ikunzyapi.com,direct
-DOMAIN-SUFFIX,ikzybf,direct
+DOMAIN,ikunzyapi.com
+DOMAIN-SUFFIX,ikzybf
 DOMAIN-SUFFIX,49zyvideoplayurl
 DOMAIN-SUFFIX,v.cdnlz
 DOMAIN-SUFFIX,vip.kuaikan
