@@ -11,7 +11,7 @@
 
 ## Loon VLESS Reality 订阅解析器
 
-用于处理机场按 `User-Agent` 返回空订阅、但使用 `v2ray` 可以获取 Base64 VLESS Reality 节点的情况。插件不会保存或上传订阅地址、UUID、公钥等信息；订阅地址由 Loon 在刷新时传给本地脚本。
+用于处理机场按 `User-Agent` 返回空订阅、但使用 `v2ray` 或 `Shadowrocket` 可以获取 Base64 VLESS Reality 节点的情况。插件兼容标准 VLESS URI 和 Shadowrocket Base64 VLESS URI，不会保存或上传订阅地址、UUID、公钥等信息；订阅地址由 Loon 在刷新时传给本地脚本。
 
 在 Loon 3.5.0(969) 或以上版本中添加以下插件：
 

@@ -12,7 +12,7 @@ assert.match(plugin, /^\[Argument\]$/m);
 assert.match(plugin, /^\[Script\]$/m);
 assert.match(
     plugin,
-    /script-path=https:\/\/raw\.githubusercontent\.com\/yeafel\/surge-list\/master\/loon-vless-reality-parser\.js/
+    /script-path=https:\/\/raw\.githubusercontent\.com\/yeafel\/surge-list\/master\/loon-vless-reality-parser\.js\?v=2/
 );
 
 var uuid = "11111111-2222-3333-8444-555555555555";
@@ -31,6 +31,19 @@ var unsafeName = first
     .replace("#", "#%5BProxy%5D%0Ainjected%3DVLESS%2C");
 var raw = [first, duplicate, unsafeName, unsupported].join("\n");
 var encoded = Buffer.from(raw, "utf8").toString("base64");
+var shadowrocketPayload = Buffer.from(
+    "auto:" + uuid + "@legacy.example.com:443",
+    "utf8"
+)
+    .toString("base64")
+    .replace(/=+$/, "");
+var shadowrocket =
+    "vless://" +
+    shadowrocketPayload +
+    "?tfo=1&remark=%E5%85%BC%E5%AE%B9%E8%8A%82%E7%82%B9&tls=1&xtls=2" +
+    "&sni=www.apple.com&pbk=" +
+    publicKey +
+    "&sid=0123456789abcdef&fp=edge";
 
 var output = parser.normalizeSubscription(encoded);
 var lines = output.split("\n");
@@ -46,6 +59,12 @@ assert.ok(lines[0].includes("short-id=0123456789abcdef"));
 assert.ok(lines[0].includes("tls-profile=chrome"));
 assert.ok(lines[0].includes("udp=true"));
 assert.strictEqual(parser.decodeBase64(Buffer.from("节点", "utf8").toString("base64")), "节点");
+var shadowrocketOutput = parser.parseVlessUri(shadowrocket, Object.create(null));
+assert.match(shadowrocketOutput, /^兼容节点=VLESS,legacy\.example\.com,443,/);
+assert.ok(shadowrocketOutput.includes("flow=xtls-rprx-vision"));
+assert.ok(shadowrocketOutput.includes("sni=www.apple.com"));
+assert.ok(shadowrocketOutput.includes('public-key="' + publicKey + '"'));
+assert.ok(!shadowrocketOutput.includes("tls-profile="));
 assert.throws(function () {
     parser.normalizeSubscription("not-a-subscription");
 });
@@ -54,6 +73,9 @@ assert.throws(function () {
 });
 assert.throws(function () {
     parser.parseVlessUri(first.replace("security=reality", "security=tls"), Object.create(null));
+});
+assert.throws(function () {
+    parser.parseVlessUri(shadowrocket.replace("xtls=2", "xtls=1"), Object.create(null));
 });
 assert.throws(function () {
     parser.parseVlessUri(first.replace("www.apple.com", "www.apple.com%0Ainjected"), Object.create(null));

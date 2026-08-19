@@ -1,5 +1,5 @@
 #!name=VLESS Reality 订阅解析器
-#!desc=为 Loon 重新拉取并解析 Base64 VLESS Reality 订阅，不保存订阅地址或节点凭据。
+#!desc=为 Loon 重新拉取并解析标准或 Shadowrocket Base64 VLESS Reality 订阅，不保存订阅地址或节点凭据。
 #!author=yeafel
 #!homepage=https://github.com/yeafel/surge-list
 #!type=parser
@@ -10,4 +10,4 @@ ua = input,"v2ray",tag=订阅 User-Agent,desc=用于绕过机场按客户端类�
 timeout = input,8000,tag=请求超时,desc=单位为毫秒
 
 [Script]
-generic script-path=https://raw.githubusercontent.com/yeafel/surge-list/master/loon-vless-reality-parser.js,tag=VLESS Reality Parser,timeout=30,argument=[{ua},{timeout}]
+generic script-path=https://raw.githubusercontent.com/yeafel/surge-list/master/loon-vless-reality-parser.js?v=2,tag=VLESS Reality Parser,timeout=30,argument=[{ua},{timeout}]

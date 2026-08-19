@@ -127,15 +127,39 @@
     }
 
     function parseVlessUri(uri, usedNames) {
-        var match = String(uri || "").trim().match(
+        var value = String(uri || "").trim();
+        var match = value.match(
             /^vless:\/\/([^@]+)@(\[[^\]]+\]|[^:]+):(\d+)\?([^#]*)(?:#(.*))?$/i
         );
-        if (!match) throw new Error("VLESS 链接格式不受支持");
+        var uuid;
+        var host;
+        var port;
+        var query;
+        var rawName;
 
-        var uuid = decodeComponent(match[1]);
-        var host = match[2];
-        var port = Number(match[3]);
-        var query = parseQuery(match[4]);
+        if (match) {
+            uuid = decodeComponent(match[1]);
+            host = match[2];
+            port = Number(match[3]);
+            query = parseQuery(match[4]);
+            rawName = match[5];
+        } else {
+            var legacy = value.match(/^vless:\/\/([^?#]+)\?([^#]*)(?:#(.*))?$/i);
+            if (!legacy) throw new Error("VLESS 链接格式不受支持");
+
+            var decoded = decodeBase64(legacy[1]);
+            var authority = decoded.match(/^([^:]+):([^@]+)@(\[[^\]]+\]|[^:]+):(\d+)$/);
+            if (!authority) throw new Error("Shadowrocket VLESS 载荷格式无效");
+
+            uuid = decodeComponent(authority[2]);
+            host = authority[3];
+            port = Number(authority[4]);
+            query = parseQuery(legacy[2]);
+            rawName = legacy[3] || query.remark || query.remarks;
+            if (!query.security && query.pbk) query.security = "reality";
+            if (!query.flow && query.xtls === "2") query.flow = "xtls-rprx-vision";
+            if (!query.type && query.obfs && query.obfs !== "none") query.type = query.obfs;
+        }
         var transport = String(query.type || query.network || "tcp").toLowerCase();
         var security = String(query.security || "").toLowerCase();
 
@@ -147,7 +171,7 @@
         validateNode(uuid, host, port, query);
 
         var fallbackName = "VLESS " + host + ":" + port;
-        var baseName = cleanName(match[5], fallbackName);
+        var baseName = cleanName(rawName, fallbackName);
         var name = baseName;
         var suffix = (usedNames[baseName] || 1) + 1;
         while (usedNames[name]) {
